@@ -74,6 +74,14 @@ li {
     text-shadow: var(--glow-blue);
     font-weight: 700;
 }
+.glow-text1 {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: var(--glow-main);
+    font-weight: 700;
+}
 
 /* Header */
 
@@ -195,6 +203,34 @@ li {
 
 .kf-btn span {
     font-size: 17px;
+    color: var(--accent-cyan);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.kf-btn1 {
+    display: inline-flex;
+    align-items: center;
+    padding: 24px 56px;
+    border-radius: 30px;
+    gap: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(248, 255, 255, 0.4);
+    background: linear-gradient(90deg, rgb(255, 80, 11), rgba(255, 251, 3, 0.15));
+}
+
+.kf-btn1:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--glow-cyan);
+    background: linear-gradient(90deg, rgb(255, 148, 106), rgba(13, 255, 53, 0.768));
+}
+
+.kf-btn1 img {
+    height: 26px;
+}
+
+.kf-btn1 span {
+    font-size: 30px;
     color: var(--accent-cyan);
     font-weight: 700;
     letter-spacing: 1px;
